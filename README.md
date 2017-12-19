@@ -74,6 +74,28 @@ The collective power of a toolchain is greater than the sum of its individual to
 
   * On the app overview on the Continuous delivery card, click Enable. 
   * On the "Create a Toolchain" page, review the diagram of the toolchain that you are about to create. The diagram shows each tool integration in its lifecycle phase in the toolchain. The toolchain's name identifies it in IBM Cloud. If you want to use a different name, change the toolchain's name.
+  * The toolchain is created.
+  * The delivery pipeline is created and triggered.
+  * The github repo is linked to the delivery pipeline and Issue Tracking account.
+  * The toolchain is associated with your app. When you push changes to the toolchain's repo, the delivery pipeline automatically builds and deploys the app.
+  * In the pipeline, click the Run Stage icon tu build and deploy the code.
+  
+## Step 7 : Modify the code
+
+ * Modify the index.html file add/remove text from the page.
+ * Commit/push the change to github.
+ * Click Delivery Pipeline to watch the stages run in response to your commit.
+
+
+ 
+
+
+
+
+
+
+  
+  
 
 
 
