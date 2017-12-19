@@ -22,13 +22,13 @@ Use the npm package manager to install dependencies and run your app.
   * run the app  ``$ npm start``
 
  
- ## Step 3 : prepare the app for deployment.
+## Step 3 : prepare the app for deployment.
 To deploy to IBM Cloud, it can be helpful to set up a manifest.yml file. 
 The manifest.yml includes basic information about your app, such as the name, 
 how much memory to allocate for each instance and the route. 
 A sample manifest.yml file is provided in the root directory.
  
- ## Step 4 : deploy the app.
+## Step 4 : deploy the app.
 You can use the Cloud Foundry CLI to deploy apps to IBM Cloud.
 Run the following command to set your API endpoint, replacing the API-endpoint value with the API endpoint for your region.
 
@@ -67,17 +67,8 @@ $ cf apps
   * In the Data & Analytics section, select Cloudant NoSQL DB and then create the service.
   * Select Restage when prompted.
   * IBM Cloud will restart your application and provide the database credentials to your application.
- 
- 
+  
  ## Step 6 : use the database
  
 
  
-
-Special Thanks
---------------------
-- [Middleman](https://github.com/middleman/middleman)
-- [jquery.tocify.js](https://github.com/gfranko/jquery.tocify.js)
-- [middleman-syntax](https://github.com/middleman/middleman-syntax)
-- [middleman-gh-pages](https://github.com/edgecase/middleman-gh-pages)
-- [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
