@@ -17,33 +17,16 @@ git clone https://github.com/malekerramli/ibm-cloud-ci-poc
 ```
 ## Step 2 : run the app locally.
 Use the npm package manager to install dependencies and run your app.
-  * cd into the cloned directory
-  ``
-$ cd ibm-cloud-ci-poc
-``
-  * install the dependencies via the package manager.
-  ``
-$ npm install
-``
-  * run the app
-  ``
-$ npm start
-``
-
-
-
-
-
- 
-
-
-
-* **Clean, intuitive design** — With Slate, the description of your API is on the left side of your documentation, and all the code examples are on the right side. Inspired by [Stripe's](https://stripe.com/docs/api) and [PayPal's](https://developer.paypal.com/webapps/developer/docs/api/) API docs. Slate is responsive, so it looks great on tablets, phones, and even in print.
-
-* **Everything on a single page** — Gone are the days when your users had to search through a million pages to find what they wanted. Slate puts the entire documentation on a single page. We haven't sacrificed linkability, though. As you scroll, your browser's hash will update to the nearest header, so linking to a particular point in the documentation is still natural and easy.
+  * cd into the cloned directory  ``$ cd ibm-cloud-ci-poc``
+  * install the dependencies via the package manager ``$ npm install``
+  * run the app  ``$ npm start``
 
  
  ## Step 3 : prepare the app for deployment.
+To deploy to IBM Cloud, it can be helpful to set up a manifest.yml file. 
+The manifest.yml includes basic information about your app, such as the name, 
+how much memory to allocate for each instance and the route. 
+A sample manifest.yml file is provided in the root directory.
  
  ## Step 4 : deploy the app.
  
