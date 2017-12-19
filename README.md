@@ -68,7 +68,9 @@ $ cf apps
   * Select Restage when prompted.
   * IBM Cloud will restart your application and provide the database credentials to your application.
   
- ## Step 6 : use the database
+ ## Step 6 : Add a tool chain to the application (CI)
+A toolchain is a set of tool integrations that support development, deployment, and operations tasks. 
+The collective power of a toolchain is greater than the sum of its individual tool integrations.
  
 
  
