@@ -71,6 +71,12 @@ $ cf apps
  ## Step 6 : Add a tool chain to the application (CI)
 A toolchain is a set of tool integrations that support development, deployment, and operations tasks. 
 The collective power of a toolchain is greater than the sum of its individual tool integrations.
+
+  * On the app overview on the Continuous delivery card, click Enable. 
+  * On the "Create a Toolchain" page, review the diagram of the toolchain that you are about to create. The diagram shows each tool integration in its lifecycle phase in the toolchain. The toolchain's name identifies it in IBM Cloud. If you want to use a different name, change the toolchain's name.
+
+
+
  
 
  
