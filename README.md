@@ -29,8 +29,46 @@ how much memory to allocate for each instance and the route.
 A sample manifest.yml file is provided in the root directory.
  
  ## Step 4 : deploy the app.
+You can use the Cloud Foundry CLI to deploy apps to IBM Cloud.
+Run the following command to set your API endpoint, replacing the API-endpoint value with the API endpoint for your region.
+
+```$ cf api <API-endpoint>```
+
+   | **Region name** | **Geographic location** | **API endpoint** |
+   |-----------------|-------------------------|-------------------|
+   | US South region | Dallas, US | api.ng.bluemix.net |
+   | US East region | Washington, DC, US | api.us-east.bluemix.net |
+   | United Kingdom region | London, England | api.eu-gb.bluemix.net |
+   | Sydney region | Sydney, Australia | api.au-syd.bluemix.net |
+   | Germany region | Frankfurt, Germany | api.eu-de.bluemix.net |
+   
+ login in to your IBM account
  
+ ```
+ $ cf login
+ ```
+if you cannot log in using the ```cf login``` or ```bx login``` commands because you have a federated user ID, use either the ```cf login --sso``` or ```bx login --sso``` commands to log in with your single sign on ID.
+
+then from your cloned directory root push the app to IBM cloud.
+```
+$ cf push 
+```
+
+Deploying the app may take a few minutes. when done you'll see a green dot next the app name. View your app at the URL listed in the output of the push command, or view both the app deployment status and the URL by running the following command:
+```
+$ cf apps
+``` 
  ## Step 5 : add a database.
+ Add a NoSQL database to this application and set up the application so that it can run locally and on IBM Cloud.
+    
+    * log in to IBM Cloud and go to the Dashboard. Select your application by clicking on its name.
+    * Click Connections then Create connection.
+    * In the Data & Analytics section, select Cloudant NoSQL DB and then create the service.
+    * Select Restage when prompted.
+    * IBM Cloud will restart your application and provide the database credentials to your application 
+      using the VCAP_SERVICES environment variable. This environment variable is available to the application only when it is running on       IBM Cloud.
+ 
+ 
  
  ## Step 6 : use the database
  
